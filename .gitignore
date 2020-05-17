@@ -1,0 +1,22 @@
+# JetBrains IDE
+/.idea/
+
+# Python distribution
+/dist/
+*.egg-info
+/build/
+*.pyc
+
+# Tests & coverage
+/htmlcov/
+/.pytest_cache/
+/.coverage
+/.hypothesis
+
+# Mac temp files
+.DS_Store
+
+# CUSTOM FILES
+# API tester passwords
+api_tester_passwords.json
+.env*

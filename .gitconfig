@@ -1,0 +1,18 @@
+[user]
+	name = Marc Sastre Rienitz
+	email = marc.sastre@vilynx.com
+
+[alias]
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+
+	om = origin/master
+	od = origin/develop
+
+[core]
+    editor = nvim
+	excludesfile = ~/.gitignore
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
