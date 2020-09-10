@@ -49,7 +49,11 @@ def get_command(action):
 list_aps_command = ['nmcli', '-t', 'device', 'wifi', 'list']
 list_aps_result = subprocess.run(list_aps_command, stdout=subprocess.PIPE)
 list_aps_output = list_aps_result.stdout.decode('utf-8')
-nm_items = [APListItem(*line.split(':')) for line in list_aps_output.split('\n') if line]
+try:
+    nm_items = [APListItem(*line.split(':')) for line in list_aps_output.split('\n') if line]
+except Exception:
+    print([line.split(':') for line in list_aps_output.split('\n') if line])
+    raise
 
 # Get VPN status
 list_con_command = ['nmcli', '-t', 'connection', 'show']

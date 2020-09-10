@@ -255,6 +255,9 @@ bindsym $mod+Shift+Home exec setxkbmap -layout es -variant cat & ibus engine xkb
 # Wifi
 bindsym $mod+Shift+w exec ~/.config/polybar/scripts/wifi_connect.py
 
+# Other cool stuff
+bindsym $mod+Shift+t exec ~/.config/i3/scripts/tunes.sh
+
 # Order of screens
 exec --no-startup-id xrandr --output DP-2 --right-of eDP-1
 exec --no-startup-id xrandr --output DP-1 --right-of DP-2

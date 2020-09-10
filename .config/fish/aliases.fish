@@ -25,14 +25,3 @@ alias gsp='git stash pop'
 alias gg='git lgb'
 alias gpull='git pull'
 alias gpush='git push'
-
-# Postgres connections
-alias local_psql='psql -d vilynx-db -U vilynx-web'
-alias test_psql='psql -h postgres2.test.east.vilynx.com -d vilynx-db -U vilynx-web -p 5432'
-alias prod_psql='ssh -f vilynxro@apache71.prod.east.vilynx.com -L 5440:localhost:5433 sleep 600; psql -h localhost -p 5440 -d vilynx-db -U vilynx-web'
-
-# Redshift connection
-alias test_redshift='psql -h redshift.test.east.vilynx.com -d dagda_insights -p 5439 -U dagda_user'
-alias prod_redshift='psql -h redshift.east.vilynx.com -d dagda_insights -p 5439 -U dagda_user'
-
-alias kraken_psql='psql -h kraken.vpn.vilynx.com -d vilynx-db -U vilynx-web -p 5432'

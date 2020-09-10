@@ -77,6 +77,7 @@ font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 modules-left = i3 spotify1
 modules-center = date
 modules-right = xkeyboard wifi pulseaudio battery
+;modules-right = xkeyboard pulseaudio battery
 
 separator = " : "
 
