@@ -52,6 +52,7 @@ end
 #########################
 # THEME                 #
 #########################
+set -g fish_term24bit 1
 set -g theme_color_scheme zenburn
 
 #########################
